@@ -4,8 +4,17 @@ The questions below can be solved in many different ways using different syntax.
 
 1. Create a function that finds all the script tags on the page and returns an array of objects with info about the scripts. Each object should contain the script url, and a boolean property for async and defer attributes. You should be able to run this in the dev tools console of any site you choose.
 ```
-function listScripts() {
+let unwrap = ({ src, async, defer }) => ({ src, async, defer });
 
+function listScripts() {
+  var scripts = document.getElementsByTagName("script");
+  // console.log(scripts)
+  const bucket = [];
+  for (var i = 0; i < scripts.length; i++) {
+    let filtered = unwrap(scripts[i]);
+    console.log(filtered);
+    bucket.push(filtered);
+  }
 }
 
 console.table(listScripts());
