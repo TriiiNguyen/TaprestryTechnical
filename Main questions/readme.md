@@ -35,10 +35,17 @@ removeAllCSS();
 
 ```
 function listAllInlineScripts() {
-
+    var scripts = document.getElementsByTagName("script");
+    console.log(scripts)
+    let bucket = []
+    for (var i = 0; i < scripts.length; i++) {
+        if (!scripts[i].src)
+            bucket.push(scripts[i].innerHTML)
+    }
+    console.log(bucket)
 }
 
-console.table(listAllInlineScripts());
+console.log(listAllInlineScripts());
 ```
 
 4. Pick a favorite website of yours and come up with 3 potential performance optimizations. Use any tool or resource you would like to use.
