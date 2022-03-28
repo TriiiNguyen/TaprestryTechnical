@@ -9,7 +9,7 @@
  * 2. get a collection of object with 'script' tag
  * 3. declare an empty array
  * 4. traverse through, deconstruct each script object filtered by 'src', 'async', 'defer'attributes and push in the result array
- * 5. output as table (doesn't work chrome)
+ * 5. output as table (doesn't work chrome?)
  */
 
 
@@ -24,8 +24,13 @@ function listScripts() {
     console.log(filtered);
     bucket.push(filtered);
   }
+  return bucket;
 }
 
 console.table(listScripts());
 
-// Testing
+// Usage
+/** To better performance, third party js codes need to be:
+ * async and deferred 
+ * Preferably not an inline script 
+*/

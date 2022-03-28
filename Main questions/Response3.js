@@ -1,5 +1,9 @@
 /**3. Create a function that returns an array of all inline script tags on the page.The array should only contain the body of each inline script tag for each entry. */
 
+//Pseudo Code
+/**
+ * 1. create function to 
+*/
 function listAllInlineScripts() {
     var scripts = document.getElementsByTagName("script");
     console.log(scripts)
@@ -8,7 +12,8 @@ function listAllInlineScripts() {
         if (!scripts[i].src)
             bucket.push(scripts[i].innerHTML)
     }
-    console.log(bucket)
+  return bucket;
+
 }
 
 console.log(listAllInlineScripts());

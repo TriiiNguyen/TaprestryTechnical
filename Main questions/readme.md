@@ -14,6 +14,7 @@ function listScripts() {
     console.log(filtered);
     bucket.push(filtered);
   }
+  return bucket;
 }
 
 console.table(listScripts());
@@ -48,3 +49,7 @@ console.log(listAllInlineScripts());
 ```
 
 4. Pick a favorite website of yours and come up with 3 potential performance optimizations. Use any tool or resource you would like to use.
+
+Website: https://www.uniqlo.com/us/en/men
+
+Pulling result from WebPageTest: LCP speed is at 9 second.

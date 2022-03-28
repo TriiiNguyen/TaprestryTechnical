@@ -11,3 +11,7 @@ function removeAllCSS() {
 }
 
 removeAllCSS();
+
+//Usage
+/** Remove all css to reveal elements on the HTML raw to take a look at a website's HTML structure. This function will also reveal redundant content that was hidden with CSS and show the true size of images. This informations will help make changes to assist performance and web optimization
+ */
