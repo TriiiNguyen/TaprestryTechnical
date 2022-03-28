@@ -1,4 +1,3 @@
-
 /** Create a function that finds all the script tags on the page and returns an array of objects with info
  about the scripts. Each object should contain the script url, and a boolean property for async and defer attributes. You should be able to run this in the dev tools console of any site you choose.*/
 
