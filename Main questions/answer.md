@@ -1,4 +1,4 @@
-# coding-questions
+# coding-questions + answer
 
 The questions below can be solved in many different ways using different syntax. All we ask is to use the style of JavaScript you feel most comfortable using and pseudocode each step of your function. These questions are just to make sure you know the basics of DOM traversal and targeting, looping, and basic data structures like objects and arrays, but they also relate to performance and debugging. You cannot use jQuery in any of these functions, everything must be done in vanilla JavaScript.
 
@@ -52,4 +52,24 @@ console.log(listAllInlineScripts());
 
 Website: https://www.uniqlo.com/us/en/men
 
-Pulling result from WebPageTest: LCP speed is at 9 second.
+Pulling result from WebPageTest: 
+LCP speed is at 9 second. The goal for LCP is under 2.5 second.
+
+Render Blocking takes up to 7.6 second preventing user from interacting with the website. It is recommened to be under 1 second. 
+
+According to Yellowlab tools. The main reason for long LCP delay and extends render blocking time is due to JavaScript complexity. Hence increases execution time. 
+
+To improve we can: 
+Utilize cache in the browser 
+
+Looking at the waterfall, we can move the LCP to the first 25 elements by deferring the load of unnecessary JaveScript. 
+
+Use Lazy loading fir img and other elements on HTML
+
+There are unused javascript. Google light house showed 7 unused third-party script and 3 in house script. We can reduce redering time by getting rid of them without hindering functionality
+
+Switch images format from jpg/jpeg/png to next-gen format like WebP or AVIF for less data consumption 
+
+Use responsive images by using media queries in html or css for different screen dimension.
+
+
