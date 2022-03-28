@@ -28,3 +28,9 @@ function APIrequest() {
 }
 
 APIrequest();
+
+//Test
+/** npm i
+ * node index.js
+ * or npx nodemon index.js
+ */
