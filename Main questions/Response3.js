@@ -2,7 +2,9 @@
 
 //Pseudo Code
 /**
- * 1. create function to 
+ * 1. create function to get all element with a script tag
+ * 2. create an empty array
+ * 
 */
 function listAllInlineScripts() {
     var scripts = document.getElementsByTagName("script");

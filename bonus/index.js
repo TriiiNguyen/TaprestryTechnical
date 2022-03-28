@@ -22,7 +22,6 @@ function APIrequest() {
     delete extractInfo.links;
     delete extractInfo.browser;
     console.log(extractInfo);
-    return extractInfo;
   })
   .catch(error => console.error(`Something went wrong ${error}`));
 }

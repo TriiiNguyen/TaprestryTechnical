@@ -3,7 +3,8 @@
 
 //Pseudo Code
 /** 
- * 1. 
+ * 1. select query "style" + link to stylesheet
+ * 2. remove
 */
 
 function removeAllCSS() {
