@@ -22,6 +22,7 @@ function APIrequest() {
     delete extractInfo.links;
     delete extractInfo.browser;
     console.log(extractInfo);
+    //doesn't need to return extractInfo because the function is async
   })
   .catch(error => console.error(`Something went wrong ${error}`));
 }
