@@ -8,7 +8,6 @@ let unwrap = ({ src, async, defer }) => ({ src, async, defer });
 
 function listScripts() {
   var scripts = document.getElementsByTagName("script");
-  // console.log(scripts)
   const bucket = [];
   for (var i = 0; i < scripts.length; i++) {
     let filtered = unwrap(scripts[i]);
