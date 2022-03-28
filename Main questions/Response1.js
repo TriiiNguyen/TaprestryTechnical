@@ -3,7 +3,6 @@
  about the scripts. Each object should contain the script url, and a boolean property for async and defer attributes. You should be able to run this in the dev tools console of any site you choose.*/
 
 
-// Pseudo Code
 /**
  * 1. make a function that deconstruct objects
  * 2. get a collection of object with 'script' tag
