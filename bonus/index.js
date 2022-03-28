@@ -15,6 +15,11 @@ function APIrequest() {
     let extractInfo = unwrap(response.data);
     let lastRunItem = extractInfo['links']['last_run'];
     let browserName = extractInfo['browser']['label'];
+    Object.assign(extractInfo, { last_run: lastRunItem })
+    Object.assign(extractInfo, { browser_name: browserName })
+    delete extractInfo.links;
+    delete extractInfo.browser;
+    console.log(extractInfo);
     return extractInfo;
   })
     .catch(error => console.error(`Something went wrong ${error}`));
